@@ -1,0 +1,31 @@
+<h2>OpenGraph Data</h2>
+<table width="900">
+<% @preview.og_tags.each do |k,v| %>
+  <tr>
+    <td><%= k %></td>
+    <td><%= v %></td>
+  </tr>
+<% end %>
+</table>
+
+<hr>
+<h2>Twitter Data</h2>
+<table width="900">
+<% @preview.twitter_tags.each do |k,v| %>
+  <tr>
+    <td><%= k %></td>
+    <td><%= v %></td>
+  </tr>
+<% end %>
+</table>
+
+<hr>
+<h2>Whatsapp Sharing Hints</h2>
+<table width="900">
+<% @preview.whatsapp_sharing_tags[:small_images].each do |k,v| %>
+  <tr>
+    <td><%= k %></td>
+    <td><%= v %></td>
+  </tr>
+<% end %>
+</table>
