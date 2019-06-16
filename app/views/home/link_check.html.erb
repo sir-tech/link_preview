@@ -51,3 +51,14 @@
   </tr>
 <% end %>
 </table>
+
+<hr>
+<h2>Facebook Sharing Hints</h2>
+<table width="900">
+<% @preview.facebook_sharing_tags[:small_images].each do |k,v| %>
+  <tr>
+    <td><%= k %></td>
+    <td><%= v %></td>
+  </tr>
+<% end %>
+</table>
