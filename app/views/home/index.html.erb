@@ -1,5 +1,5 @@
 <div class="container">
-  <div class="row justify-content-md-center">
+  <div class="row justify-content-md-center justify-content-sm-center">
     <div class="col text-center">
       <h1>Usage</h1>
 
@@ -9,8 +9,10 @@
       <p>https://linkpreview.sirtech.io/link_check?url=WEBSITE_URL</p>
 
       <form action="http://linkpreview.sirtech.io/link_check" method="get">
-        <input type="text" name="url" pattern="https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)" placeholder="https://example.com">
-        <input type="submit" value="Check Link!">
+        <div class="form-group">
+          <input type="text" name="url" class="form-control" pattern="https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)" placeholder="https://example.com">
+        </div>
+        <input type="submit" value="Check Link!" class="btn btn-success">
       </form>
 
       <hr>
@@ -19,8 +21,10 @@
       <p>https://linkpreview.sirtech.io/image_dimension?url=IMAGE_URL</p>
 
       <form action="https://linkpreview.sirtech.io/image_dimension" method="get">
-        <input type="text" name="url" placeholder="https://example.com/test.png">
-        <input type="submit" value="Check Link!">
+        <div class="form-group">
+          <input type="text" name="url" class="form-control" placeholder="https://example.com/test.png">
+        </div>
+        <input type="submit" value="Check Image Url!" class="btn btn-success">
       </form>
     </div>
   </div>
