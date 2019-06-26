@@ -1,3 +1,19 @@
 <h1>Usage</h1>
-<p>http://linkpreview.sirtech.io/link_check?url=https://example.com</p>
-<p>http://linkpreview.sirtech.io/image_dimension?url=http://www.example.com/foo.png</p>
+
+<h2>OpenGraph and Metatag Analyzer</h2>
+<p>https://linkpreview.sirtech.io/link_check?url=WEBSITE_URL</p>
+
+<form action="http://linkpreview.sirtech.io/link_check" method="get">
+  <input type="text" name="url" pattern="https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)" placeholder="https://example.com">
+  <input type="submit" value="Check Link!">
+</form>
+
+<hr>
+
+<h2>Image Dimension Check</h2>
+<p>https://linkpreview.sirtech.io/image_dimension?url=IMAGE_URL</p>
+
+<form action="https://linkpreview.sirtech.io/image_dimension" method="get">
+  <input type="text" name="url" placeholder="https://example.com/test.png">
+  <input type="submit" value="Check Link!">
+</form>
